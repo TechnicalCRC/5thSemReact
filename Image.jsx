@@ -1,9 +1,6 @@
-import ABC from './ABC.jpeg';
+import ASP from './assets/ASP.JPG'
 
 function Image(){
-  let imgName = "Image Name";
-  return <img src={ABC} alt={imgName} width="200px"/>
+  return <img src={ASP} alt="Image text" width="200px" />
 }
-
 export default Image;
-

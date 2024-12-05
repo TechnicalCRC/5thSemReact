@@ -1,0 +1,12 @@
+input, button{
+  width: 100%;
+}
+.my-row{
+  margin-bottom: 5px;
+}
+
+.my-heading{
+  font-weight: 900;
+  margin: 10px;
+  margin-bottom: 20px;
+}

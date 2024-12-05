@@ -1,10 +1,4 @@
-let Greet = function(){
-  return <h1 style={{color:'red'}} >Good Afternoon</h1>;
+function Greet(){
+  return <h2>My greetings Here ...<br/> Good Afternoon</h2>;
 }
-
-export let StuName = "Pinku";
-export function dispaly(){
-  return <u>Underline <br/> Text</u>
-}
-
 export default Greet;

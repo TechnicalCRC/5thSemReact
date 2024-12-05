@@ -1,33 +1,45 @@
-const Emp = () => {
-  let arr = [1, 2, 3, 4, 5];
-  let empdata = ["Bhavya", "Aditya", "Aakash", "Divyansh", "Bhavesh"];
+export default function Emp() {
+  let employees = ['Vishal', 'Mohit','Sumit','Amit','Varun','Vipin']
 
-  let count = 0;
-  return (
-    <>
-      <div>Emp</div>
-      {arr[3]}
-      <br />
-      {arr[2]}
+  let students=[
+    {
+      Id:101,
+      Name:'Ram',
+      Branch:'CSDS',
+      Marks:2021
+    },
+    {
+      Id:102,
+      Name:'Ram',
+      Branch:'CSDS',
+      Marks:2021
+    },
+    {
+      Id:103,
+      Name:'Ram',
+      Branch:'CSDS',
+      Marks:2021
+    }
+  ]
 
-      <h3>Employee elements </h3>
-      <ul style={{ listStyleType: "none" }}>
-        {empdata.map((data) => (
-          <li
-            key={data}
-            style={{
-              display: "inline",
-              margin: "6px",
-              border: "2px solid blue",
-              backgroundColor: "Yellow",
-            }}
-          >
-            {data}
-          </li>
-        ))}
-      </ul>
-    </>
-  );
-};
+  return <>
+    <h1>Employee List</h1>
+    <ul>
+     {
+      employees.map((emp)=> 
+      <li key={emp} style={{display:'inline',
+        margin:'10px',
+        border:'2px solid red',
+        backgroundColor:'lightgreen',
+        padding:"0px 5px"
+ 
+      }}>{emp}</li>
+      )
+     }
+ 
 
-export default Emp;
+    {/* <li>{employees[0]}</li>
+    <li>{employees[1]}</li> */}
+    </ul>
+  </>
+}
